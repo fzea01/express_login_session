@@ -1,0 +1,12 @@
+
+<form method="GET"  action="/logout" novalidate>
+  <div class="form-actions">
+      <% if (messages.success) { %>
+        <div class="flash flash-success"><%= messages.success %></div><br />
+        <button class="btn" type="submit" >Logout</button>
+      <% } else {%>
+        <div class="flash flash-false"><%= messages.false %></div><br />
+        <button class="btn" type="submit" >Login</button>
+      <% } %>
+  </div>
+</form>
